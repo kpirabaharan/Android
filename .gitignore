@@ -2,4 +2,4 @@ old-features/
 
 *./.idea/*
 *./build/*
-*./gradle/*
+*gradle/*
