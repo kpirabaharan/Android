@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">ViewModel_LiveData_DataBinding</string>
+    <string name="click_here">Click Here</string>
 </resources>
