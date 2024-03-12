@@ -1,16 +1,11 @@
 package com.example.navdemo
 
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.activity.ComponentActivity
-import androidx.databinding.DataBindingUtil
-import com.example.navdemo.databinding.ActivityMainBinding
 
-
-class MainActivity : ComponentActivity() {
-    private lateinit var binding: ActivityMainBinding
+class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
+        setContentView(R.layout.activity_main)
     }
 }
-
