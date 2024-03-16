@@ -13,5 +13,6 @@ class MainActivity : AppCompatActivity() {
         val recyvlerView = findViewById<RecyclerView>(R.id.myRecyclerView)
         recyvlerView.setBackgroundColor(Color.YELLOW)
         recyvlerView.layoutManager = LinearLayoutManager(this)
+        recyvlerView.adapter = MyRecyclerViewAdapter()
     }
 }
