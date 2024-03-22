@@ -2,12 +2,10 @@ package com.example.coroutinesdemo
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.widget.Button
 import android.widget.TextView
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.Dispatchers.IO
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 
@@ -35,7 +33,8 @@ class MainActivity : AppCompatActivity() {
             CoroutineScope(
                 Dispatchers.Main
             ).launch {
-                tvUserMessage.text = UserDataManager().getTotalUserCount().toString()
+//                tvUserMessage.text = UserDataManager().getTotalUserCount().toString()
+                tvUserMessage.text = UserDataManagerTwo().getTotalUserCount().toString()
             }
         }
     }
