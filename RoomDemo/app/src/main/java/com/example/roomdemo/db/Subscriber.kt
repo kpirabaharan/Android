@@ -10,11 +10,12 @@ data class Subscriber(
     @ColumnInfo(name = "subscriber_id")
     val id: Int,
 
+    // To make value mutable, change val to var
     @ColumnInfo(name = "subscriber_name")
-    val name: String,
+    var name: String,
 
     @ColumnInfo(name = "subscriber_email")
-    val email: String
+    var email: String
 ) {
 
 }
